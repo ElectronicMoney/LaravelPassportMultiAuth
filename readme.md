@@ -1,4 +1,4 @@
-# Passport-Multiauth Demo
+# LaravelPassportMultiAuth
 
 This project is an implementation sample using the package [Passport-Multiauth](https://github.com/sfelix-martins/passport-multiauth).
 
@@ -6,14 +6,14 @@ This project is an implementation sample using the package [Passport-Multiauth](
 
 * Laravel Framework 5.6.*
 * Laravel Passport ^7.0
-* Passport-Multiauth ^3.0
+* LaravelPassportMultiAuth ^1.0
 
 ## Installation
 
 Clone project and access the project folder:
 ```bash
-git clone https://github.com/sfelix-martins/passport-multiauth-demo.git
-cd passport-multiauth-demo
+git clone https://github.com/ElectronicMoney/LaravelPassportMultiAuth.git
+cd LaravelPassportMultiAuth
 ```
 
 Copy the `.env.example` to `.env` file and set your local configurations:
@@ -61,14 +61,14 @@ The `oauth/token` route just add a new param `provider` to default laravel passp
 * Seeders
     * `database/seeds/UsersTableSeeder.php`
 * Entities
-    * `App\Admin`
-    * `App\User` 
+    * `App\Models\Admin`
+    * `App\Models\User` 
  * Routes
     * `routes/api.php`
  * Controllers
     * `App\Controllers\LoginController`
  * Services
-    * `App\Model\Authenticator` 
+    * `App\Models\Authenticator` 
 
 ## Todo
 
