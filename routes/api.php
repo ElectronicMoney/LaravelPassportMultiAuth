@@ -21,4 +21,4 @@ Route::middleware('auth:admin')->get('/admin', function (Request $request) {
     return $request->user();
 });
 
-Route::post('login', 'LoginController@login');
+Route::post('login', 'Api\LoginController@login');
