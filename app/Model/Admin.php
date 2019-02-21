@@ -5,7 +5,7 @@ namespace App\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use SMartins\PassportMultiauth\HasMultiAuthApiTokens;
-use App\Models\AdminRole;
+use App\Model\AdminRole;
 
 class Admin extends Authenticatable
 {

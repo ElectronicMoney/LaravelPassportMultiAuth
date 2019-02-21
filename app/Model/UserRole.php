@@ -3,7 +3,7 @@
 namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Models\User;
+use App\Model\User;
 
 class UserRole extends Model
 {
