@@ -61,17 +61,20 @@ The `oauth/token` route just add a new param `provider` to default laravel passp
 * Seeders
     * `database/seeds/UsersTableSeeder.php`
 * Entities
-    * `App\Models\Admin`
-    * `App\Models\User` 
+    * `App\Model\Admin`
+    * `App\Model\User` 
  * Routes
     * `routes/api.php`
  * Controllers
     * `App\Controllers\LoginController`
  * Services
-    * `App\Models\Authenticator` 
+    * `App\Model\Authenticator` 
 
 ## Todo
 
 * Add unit tests 
 * Add instructions to use with [laradock](http://laradock.io/) environment
 * Improve documentation
+## Author: Emeka Augustine
+## Cafafans Coders
+## Email: cafafanscoders@gmail.com
