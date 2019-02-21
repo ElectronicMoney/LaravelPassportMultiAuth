@@ -13,7 +13,7 @@ class AdminsTableSeeder extends Seeder
     public function run()
     {
         Admin::create([
-            'admin_role_id' => rand(1, 5),
+            'admin_role_id' => 1,
             'name' => 'Administrator',
             'email' => 'admin@cafafanscoders.com',
             'email_verified_at' => now(),
@@ -22,7 +22,7 @@ class AdminsTableSeeder extends Seeder
         ]);
 
         Admin::create([
-            'admin_role_id' => rand(1, 5),
+            'admin_role_id' => 2,
             'name' => 'Author',
             'email' => 'author@cafafanscoders.com',
             'email_verified_at' => now(),
@@ -32,7 +32,7 @@ class AdminsTableSeeder extends Seeder
 
 
         Admin::create([
-            'admin_role_id' => rand(1, 5),
+            'admin_role_id' => 3,
             'name' => 'Editor',
             'email' => 'editor@cafafanscoders.com',
             'email_verified_at' => now(),
@@ -42,7 +42,7 @@ class AdminsTableSeeder extends Seeder
 
 
         Admin::create([
-            'admin_role_id' => rand(1, 5),
+            'admin_role_id' => 4,
             'name' => 'Support',
             'email' => 'support@cafafanscoders.com',
             'email_verified_at' => now(),

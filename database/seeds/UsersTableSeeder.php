@@ -21,7 +21,7 @@ class UsersTableSeeder extends Seeder
             'remember_token' => str_random(10),
         ]);
 
-        Admin::create([
+        User::create([
             'user_role_id' => rand(1, 5),
             'name' => 'Emeka Gift',
             'email' => 'gift@cafafanscoders.com',
