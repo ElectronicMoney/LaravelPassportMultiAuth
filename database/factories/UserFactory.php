@@ -13,7 +13,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\Models\User::class, function (Faker $faker) {
+$factory->define(App\Model\User::class, function (Faker $faker) {
     return [
         'user_role_id' => $faker->numberBetween(1, 5),
         'name' => $faker->name,

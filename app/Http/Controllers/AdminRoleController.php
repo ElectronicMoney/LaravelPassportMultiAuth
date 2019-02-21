@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AdminRole;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Model\AdminRole;
 
 class AdminRoleController extends Controller
 {
@@ -41,10 +42,10 @@ class AdminRoleController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\AdminRole  $adminRole
+     * @param  \App\Models\UserRole  $userRole
      * @return \Illuminate\Http\Response
      */
-    public function show(AdminRole $adminRole)
+    public function show(UserRole $userRole)
     {
         //
     }
@@ -52,10 +53,10 @@ class AdminRoleController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\AdminRole  $adminRole
+     * @param  \App\Models\UserRole  $userRole
      * @return \Illuminate\Http\Response
      */
-    public function edit(AdminRole $adminRole)
+    public function edit(UserRole $userRole)
     {
         //
     }
@@ -64,10 +65,10 @@ class AdminRoleController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\AdminRole  $adminRole
+     * @param  \App\Models\UserRole  $userRole
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, AdminRole $adminRole)
+    public function update(Request $request, UserRole $userRole)
     {
         //
     }
@@ -75,10 +76,10 @@ class AdminRoleController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\AdminRole  $adminRole
+     * @param  \App\Models\UserRole  $userRole
      * @return \Illuminate\Http\Response
      */
-    public function destroy(AdminRole $adminRole)
+    public function destroy(UserRole $userRole)
     {
         //
     }

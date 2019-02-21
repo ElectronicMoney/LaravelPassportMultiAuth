@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\AdminRole;
+use App\Model\AdminRole;
 
 class AdminRolesTableSeeder extends Seeder
 {

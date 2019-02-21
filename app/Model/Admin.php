@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Models;
+namespace App\Model;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use SMartins\PassportMultiauth\HasMultiAuthApiTokens;
-use App\Models\UserRole;
+use App\Models\AdminRole;
 
-class User extends Authenticatable
+class Admin extends Authenticatable
 {
     use Notifiable, HasMultiAuthApiTokens;
 
@@ -17,9 +17,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'user_role_id', 'name', 'email', 'password',
+        'admin_role_id', 'name', 'email', 'password',
     ];
-
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -28,14 +27,13 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-
     /**
-     * User belongs to user Role
+     * Admin belongs to  Admin Role
      *
-     * @return userRole
+     * @return void
      */
-    public function userRole()
+    public function adminRole()
     {
-        return $this->belongsTo(userRole::class);
+        return $this->belongsTo(AdminRole::class);
     }
 }
