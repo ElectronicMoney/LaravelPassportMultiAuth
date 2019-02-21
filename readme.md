@@ -6,7 +6,7 @@ This project is an implementation sample using the package [Passport-Multiauth](
 
 * Laravel Framework 5.6.*
 * Laravel Passport ^7.0
-* LaravelPassportMultiAuth ^1.0
+* smartins/passport-multiauth^3.0
 
 ## Installation
 
