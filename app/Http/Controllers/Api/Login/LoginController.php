@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\Login;
 use App\Model\Authenticator;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class LoginController extends Controller
 {
