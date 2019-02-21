@@ -1,8 +1,7 @@
 <?php
 
-use App\User;
-use App\Admin;
 use Illuminate\Database\Seeder;
+use App\Models\User;
 
 class UsersTableSeeder extends Seeder
 {
@@ -14,15 +13,21 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name' => 'User',
-            'email' => 'sfelix_martins@hotmail.com',
+            'user_role_id' => rand(1, 5),
+            'name' => 'Emeka Augustine',
+            'email' => 'emoney@cafafanscoders.com',
+            'email_verified_at' => now(),
             'password' => bcrypt('secret'),
+            'remember_token' => str_random(10),
         ]);
 
         Admin::create([
-            'name' => 'Admin',
-            'email' => 'sfelix_martins@hotmail.com',
+            'user_role_id' => rand(1, 5),
+            'name' => 'Emeka Gift',
+            'email' => 'gift@cafafanscoders.com',
+            'email_verified_at' => now(),
             'password' => bcrypt('secret'),
+            'remember_token' => str_random(10),
         ]);
     }
 }
